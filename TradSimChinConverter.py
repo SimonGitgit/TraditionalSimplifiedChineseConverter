@@ -16,7 +16,7 @@ import opencc
 # converter2 = opencc.OpenCC('t2s.json')
 # print(converter2.convert("難寫"))
 main_win = Tk()
-main_win.title("繁簡轉換器")
+main_win.title("繁簡轉換器 版權所有© 2022 Simon Tam. All rights reserved.")
 width = 500
 height = 51
 main_win.geometry(f'{width}x{height}')
@@ -33,14 +33,19 @@ def toSimplified():
     main_win.clipboard_append(newstr)
     e2.delete(0,END)
     e2.insert(0, newstr)
-    print("ok")
+    #print("ok")
     if len(strtemp)==1:
         #print(strtemp.encode('big5'))
         bytetemp = strtemp.encode('big5')
         #print(bytetemp)
-        combined =  bytetemp[0]<<8 | bytetemp[1]
-        #print(combined)
-        webbrowser.open("http://input.foruto.com/cjdict/" + str(int(combined)) + ".php")
+        combined =  hex(bytetemp[0]<<8 | bytetemp[1])[2:len(hex(bytetemp[0]<<8 | bytetemp[1]))]
+        combinedstr = ""
+        for ele in combined:
+            combinedstr += ele.capitalize()
+        #webbrowser.open("http://input.foruto.com/cjdict/" + str(int(combined)) + ".php")
+        
+        webbrowser.open("http://input.foruto.com/cjdict/Images/CJZD_JPG/"+combinedstr+".JPG")
+        
 
 def toTraditional():
     strtemp = e2.get()

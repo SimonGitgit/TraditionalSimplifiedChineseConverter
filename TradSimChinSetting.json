@@ -7,7 +7,7 @@
   },
   {
    "optionDest": "filenames",
-   "value": "C:/Users/Roborn/Desktop/Trans/Python/TradSimChinConverter/TradSimChinConverter.py"
+   "value": "C:/Users/Roborn/Desktop/TraditionalSimplifiedChineseConverter/TradSimChinConverter.py"
   },
   {
    "optionDest": "onefile",
@@ -63,11 +63,11 @@
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/Roborn/Desktop/Trans/Python/TradSimChinConverter/opencc;opencc/"
+   "value": "C:/Users/Roborn/Desktop/TraditionalSimplifiedChineseConverter/opencc;opencc/"
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/Roborn/Desktop/Trans/Python/TradSimChinConverter/OpenCC-1.1.1.dist-info;OpenCC-1.1.1.dist-info/"
+   "value": "C:/Users/Roborn/Desktop/TraditionalSimplifiedChineseConverter/OpenCC-1.1.1.dist-info;OpenCC-1.1.1.dist-info/"
   }
  ],
  "nonPyinstallerOptions": {
