@@ -9,7 +9,7 @@ Procedure:
 2. open the exe
 
 Input: 
-input traditional (blank label on top) or simplified chinese (blank label bottom)
+1. input traditional (blank label on top) or simplified chinese (blank label bottom) text
 
 Function:
 1. Press button to convert to another chinese type
