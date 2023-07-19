@@ -33,19 +33,27 @@ def toSimplified():
     main_win.clipboard_append(newstr)
     e2.delete(0,END)
     e2.insert(0, newstr)
-    #print("ok")
+
+    
+    # Version 1
+    # if len(strtemp)==1:
+    #     #print(strtemp.encode('big5'))
+    #     bytetemp = strtemp.encode('big5')
+    #     #print(bytetemp)
+    #     combined =  hex(bytetemp[0]<<8 | bytetemp[1])[2:len(hex(bytetemp[0]<<8 | bytetemp[1]))]
+    #     combinedstr = ""
+    #     for ele in combined:
+    #         combinedstr += ele.capitalize()
+    #     #webbrowser.open("http://input.foruto.com/cjdict/" + str(int(combined)) + ".php")
+    #     webbrowser.open("http://input.foruto.com/cjdict/Images/CJZD_JPG/"+combinedstr+".JPG")
+
+    # Version 2
     if len(strtemp)==1:
-        #print(strtemp.encode('big5'))
         bytetemp = strtemp.encode('big5')
-        #print(bytetemp)
-        combined =  hex(bytetemp[0]<<8 | bytetemp[1])[2:len(hex(bytetemp[0]<<8 | bytetemp[1]))]
-        combinedstr = ""
-        for ele in combined:
-            combinedstr += ele.capitalize()
-        #webbrowser.open("http://input.foruto.com/cjdict/" + str(int(combined)) + ".php")
-        
-        webbrowser.open("http://input.foruto.com/cjdict/Images/CJZD_JPG/"+combinedstr+".JPG")
-        
+        # print(bytetemp)
+        combined = hex(bytetemp[0]<<8 | bytetemp[1])[2:len(hex(bytetemp[0]<<8 | bytetemp[1]))]
+        webbrowser.open("https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%"+combined[0].capitalize()+combined[1].capitalize()+"%"+combined[2].capitalize()+combined[3].capitalize())
+        # print("https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/search.php?q=%"+combined[0].capitalize()+combined[1].capitalize()+"%"+combined[2].capitalize()+combined[3].capitalize())   #  %D7%F0")
 
 def toTraditional():
     strtemp = e2.get()
