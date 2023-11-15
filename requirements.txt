@@ -1,0 +1,4 @@
+tkinter==
+webbrowser==
+opencc==1.1.1
+keyboard==0.13.5

@@ -1,7 +1,9 @@
 from tkinter import Label, Button, Entry, Tk, END
 import webbrowser
 import opencc
-import keyboard
+# import keyboard
+from keyboard import add_hotkey
+from keyboard import wait
 
 # t2s - 繁体转简体
 # s2t - 简体转繁体
@@ -25,6 +27,7 @@ instantiateRight = int(main_win.winfo_screenwidth()-width)
 instantiateBottom = int(main_win.winfo_screenheight()-height-120)
 main_win.geometry("+{}+{}".format(instantiateRight,instantiateBottom))
 
+#Version 3
 def on_hotkey():
     # on hotkey do process
     toSimplified()
@@ -85,7 +88,7 @@ b1.place(x=450,y=0)
 b2 = Button(main_win, text="簡轉繁", fg = 'black', command=toTraditional)
 b2.place(x=450,y=25)
 
-keyboard.add_hotkey('ctrl + b', on_hotkey)
+add_hotkey('ctrl + b', on_hotkey)
 
 main_win.mainloop()
-keyboard.wait()
+wait()
