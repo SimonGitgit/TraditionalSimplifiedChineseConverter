@@ -2,3 +2,8 @@ tkinter==8.6
 webbrowser==
 opencc==1.1.1
 keyboard==0.13.5
+
+import keyboard
+import pyperclip
+import webbrowser
+import opencc

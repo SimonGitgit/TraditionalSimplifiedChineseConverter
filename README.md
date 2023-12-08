@@ -16,7 +16,21 @@ Function:
 2. the converted text is also copy to the clipboard
 3. If the traditional Chinese input text has only one character, it will open up a browser to check its Changjie code
 
-
+V4 directly backend Ctrl+B shortcut key to convert traditional Chinese to simplified Chinese
 V3 New function Ctrl+B shortcut to do the conversion from traditional C to simplified C
 V2 Single traditional Chinese character input will trigger online dictionary
 V1 Trad Sim Convert
+
+https://zhuanlan.zhihu.com/p/442768333
+基本流程
+virtualenv envname #创建新的虚拟环境
+cd envname # 进入虚拟环境目录
+cd Scripts # 进入虚拟环境的Scripts文件夹中
+activate # 激活虚拟环境
+pip install pyinstaller # 安装打包工具pyinstaller
+pip install pypiwin32 # 安装打包工具相关依赖
+pip install python-packages # 安装python程序中需要引入的外部包
+将需要打包的python文件或文件夹复制到Scripts目录中（该步骤也可以不用执行）
+pyinstaller -F py文件路径
+切换到Scripts目录下，执行deactivate，取消激活虚拟环境
+打包结束，exe文件存放在dist文件夹中
