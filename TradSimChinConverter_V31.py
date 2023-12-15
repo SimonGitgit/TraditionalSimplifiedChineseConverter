@@ -26,7 +26,7 @@ def modify_clipboard():
     keyboard.press_and_release('ctrl+v')
 
 def on_key_press(event):
-    if event.name == 'd' and keyboard.is_pressed('ctrl'):
+    if event.name == 'b' and keyboard.is_pressed('ctrl'):
         modify_clipboard()
 
 keyboard.on_press(on_key_press)
