@@ -5,7 +5,7 @@ Environment:
 Windows
 
 Procedure:
-1. Just download the exe
+1. download the exe from Releases
 2. open the exe
 
 Input: 
