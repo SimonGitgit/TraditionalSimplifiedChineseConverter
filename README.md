@@ -5,21 +5,18 @@ Environment:
 Windows
 
 Procedure:
-1. Just download the exe
+1. download the exe from Releases
 2. open the exe
 
 Input: 
-1. input traditional (blank label on top) or simplified chinese (blank label bottom) text
+1. highlight traditional chinese text
+2. press Ctrl + Alt to convert it to simplified chinese text
+3. press Alt + x to terminate exe
 
 Function:
-1. Press button to convert to another chinese type
+1. Press key to convert traditional to simplified chinese
 2. the converted text is also copy to the clipboard
 3. If the traditional Chinese input text has only one character, it will open up a browser to check its Changjie code
-
-V4 directly backend Ctrl+B shortcut key to convert traditional Chinese to simplified Chinese
-V3 New function Ctrl+B shortcut to do the conversion from traditional C to simplified C
-V2 Single traditional Chinese character input will trigger online dictionary
-V1 Trad Sim Convert
 
 https://zhuanlan.zhihu.com/p/442768333
 基本流程
